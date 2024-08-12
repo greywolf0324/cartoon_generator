@@ -148,7 +148,7 @@ if content_text and generate_btn and chapter_count:
     if os.name == 'posix':
         convert_docx_to_pdf('output.docx', 'output.pdf')
     st.session_state.file_available = True
-    st.experimental_rerun()
+    # st.experimental_rerun()
 
 if st.session_state.file_available:
     for i in range(st.session_state.chapter_count):
